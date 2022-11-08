@@ -5,47 +5,39 @@ import { CiBaseball } from 'react-icons/ci';
 import { GiBaseballBat, GiBaseballGlove} from 'react-icons/gi';
 
 const sidebar = () => {
-  const router = useRouter();
 
-  const menuItems = [
-    {
-      href: '/',
-      title: 'Home',
-      icon: 'AiOutlineHome',
-    },
-    {
-      href: '/about',
-      title: 'about',
-      icon: 'CiBaseball',
-    },
-    {
-      href: '/predictiongames',
-      title: 'Prediction Games',
-      icon: 'GiBaseballGlove',
-    },
-  ];
+  // const menuItems = [
+  //   {
+  //     href: '/',
+  //     title: 'Home',
+  //     icon: 'AiOutlineHome',
+  //   },
+  //   {
+  //     href: '/about',
+  //     title: 'about',
+  //     icon: 'CiBaseball',
+  //   },
+  //   {
+  //     href: '/predictiongames',
+  //     title: 'Prediction Games',
+  //     icon: 'GiBaseballGlove',
+  //   },
+  // ];
 
   return (
-    <div className="flex flex-col md:flex-row flex-1">
-      <aside className="bg-green-200 w-full md:w-60">
-        <nav>
-          <ul>
-            {menuItems.map(({ href, title, icon }) => (
-              <li className="m-2" key={title}>
-                <Link legacyBehavior href={href}>
-                  <a className={`flex p-2 bg-green-300 rounded hover:bg-green-500 cursor-pointer ${router.asPath === href && 'bg-green-700 text-white'}`}>
-                    {icon}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </aside>
+    <div className="fixed top-0 left-0 h-screen w-16 flex flex-col bg-white dark:bg-gray-900 shadow-lg">
+     
     </div>
   );
 };
 
-const SidebarIcon = ({ icon, text = })
+const SidebarIcon = ({ icon, title, link}) => {
+  <div className="sidebar-icon group">
+    {icon}
+    <span className="sidebar-tooltip group-hover:scale-100">
+      {title}
+    </span>
+  </div>
+}
 
 export default sidebar;
