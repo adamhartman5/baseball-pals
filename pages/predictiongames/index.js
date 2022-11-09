@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function predictiongames() {
+const index = () => {
   return (
-    <div>predictiongames</div>
+    <div>index</div>
   )
 }
+
+export default index

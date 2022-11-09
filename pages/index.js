@@ -1,18 +1,37 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import styled from 'styled-components'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <HeadContainer>
       <Head>
         <title>Baseball Pals</title>
-        <link rel="icon" href="/cutty-small.png" />
+        <link rel="icon" href="/assets/cutty-small.png" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col px-20">
-        <h1 className='flex text-white align-top justify-center text-5xl z-99'>UNDER CONSTRUCTION</h1>
-        <div className='flex -z-50'><Image src='/cottoncandy.gif' layout='fill' /></div>
-      </main>
-    </div>
+      <MainContainer>
+      </MainContainer>
+    </HeadContainer>
   )
 }
+
+const HeadContainer = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+`
+
+const MainContainer = styled.main`
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+`
