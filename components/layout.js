@@ -32,10 +32,13 @@ const LayoutContainer = styled.div`
 `
 
 const HeaderContainer = styled.div`
+  display: flex;
 `
 
 const MainContainer = styled.div`
+  display: flex;
 `
 
 const ChildContainer = styled.main`
+  display: flex;
 `
