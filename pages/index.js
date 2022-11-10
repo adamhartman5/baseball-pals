@@ -11,6 +11,7 @@ export default function Home() {
       </Head>
 
       <MainContainer>
+        Test
       </MainContainer>
     </HeadContainer>
   )
@@ -29,6 +30,7 @@ const HeadContainer = styled.div`
 const MainContainer = styled.main`
   display: flex;
   width: 100%;
+  height: 100vh;
   flex: 1;
   flex-direction: column;
   margin: 0;

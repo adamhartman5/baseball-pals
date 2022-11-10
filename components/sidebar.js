@@ -1,26 +1,57 @@
+import Link from 'next/link'
 import React from 'react'
 import styled from 'styled-components'
 import dirt from '../public/assets/dirtsidebar.png'
-import Image from 'next/image'
 
 const sidebar = () => {
   return (
-    <SidebarContainer>sidebar</SidebarContainer>
+    <SidebarContainer image={dirt}>
+      <LinkContainer>
+        <Link href='/' passHref legacyBehavior>
+          <LinkTag>
+            Home
+          </LinkTag>
+        </Link>
+        <Link href='/about' passHref legacyBehavior>
+          <LinkTag>
+            About
+          </LinkTag>
+        </Link>
+        <Link href='/predictiongames' passHref legacyBehavior>
+          <LinkTag>
+            Prediction Games
+          </LinkTag>
+        </Link>
+      </LinkContainer>
+    </SidebarContainer>
   )
 }
 
 export default sidebar
 
 const SidebarContainer = styled.div`
-  width: 150px;
+  width: 175px;
   height: 100vh;
   border-right: 1px solid gray;
-  margin-top: 0;
-  padding-top: 0;
-  background-image: url(${dirt});
   display: flex;
+  background-image: url(${props => props.image.src});
+  background-repeat: repeat;
+  background-size: cover;
 `
 
-const ImageContainer = styled.div`
+const LinkContainer = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+`
 
+const LinkTag = styled.a`
+  display: flex;
+  color: white;
+  padding-top: 5px;
+  :hover{
+    color: red;
+  }
 `
