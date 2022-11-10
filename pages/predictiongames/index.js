@@ -6,7 +6,7 @@ const index = () => {
   return (
     <MainContainer>
       <LinkContainer>
-        <Link href='fapredictions' passHref legacyBehavior>
+        <Link href='predictiongames/fapredictions' passHref legacyBehavior>
           <LinkTag>
             Free Agency Prediction Game
           </LinkTag>
