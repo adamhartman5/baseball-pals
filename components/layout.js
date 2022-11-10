@@ -38,10 +38,12 @@ const HeaderContainer = styled.div`
 const MainContainer = styled.div`
   display: flex;
   width: 100%;
+  height: 100vh;
 `
 
 const ChildContainer = styled.main`
   display: flex;
   width: 100%;
+  height: 100vh;
   justify-content: center;
 `
