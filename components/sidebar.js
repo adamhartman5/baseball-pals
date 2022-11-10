@@ -36,8 +36,7 @@ const SidebarContainer = styled.div`
   display: flex;
   background-image: url(${props => props.image.src});
   background-repeat: no-repeat;
-  background-size: contain;
-  overflow-y: hidden;
+  background-size: cover;
 `
 
 const LinkContainer = styled.div`
