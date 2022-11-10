@@ -6,7 +6,7 @@ const index = () => {
   return (
     <MainContainer>
       <LinkContainer>
-        <Link href='./fapredictions' passHref legacyBehavior>
+        <Link href='fapredictions' passHref legacyBehavior>
           <LinkTag>
             Free Agency Prediction Game
           </LinkTag>
@@ -19,7 +19,7 @@ const index = () => {
 export default index
 
 const MainContainer = styled.div`
-  
+
 `
 
 const LinkContainer = styled.div`
