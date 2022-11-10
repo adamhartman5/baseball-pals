@@ -31,12 +31,12 @@ export default sidebar
 
 const SidebarContainer = styled.div`
   width: 175px;
-  height: 100%;
+  height: 100vh;
   border-right: 1px solid gray;
   display: flex;
   background-image: url(${props => props.image.src});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   overflow-y: hidden;
 `
 
