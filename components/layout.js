@@ -37,8 +37,11 @@ const HeaderContainer = styled.div`
 
 const MainContainer = styled.div`
   display: flex;
+  width: 100%;
 `
 
 const ChildContainer = styled.main`
   display: flex;
+  width: 100%;
+  justify-content: center;
 `
