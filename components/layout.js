@@ -47,5 +47,4 @@ const ChildContainer = styled.main`
   width: 100%;
   height: 100vh;
   justify-content: center;
-  overflow: hidden;
 `
