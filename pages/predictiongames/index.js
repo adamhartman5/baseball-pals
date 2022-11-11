@@ -27,5 +27,5 @@ const LinkContainer = styled.div`
 `
 
 const LinkTag = styled.a`
-  color: white;
+
 `
